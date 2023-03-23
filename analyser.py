@@ -161,7 +161,6 @@ if __name__ == "__main__":
     def call_analyzer_error(path: str):
         error_checking = StaticCodeAnalyzer(path)
         error_checking.run()
-        return None
 
     if os.path.isdir(input_path):
         for root, dirs, files in os.walk(input_path):
